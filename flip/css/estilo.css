@@ -1,0 +1,73 @@
+
+body {
+	
+	background: #292929;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-family: arial;
+	height: 100vh;
+	width: 100%;
+
+ 	
+}
+.cardBox{
+	perspective: 500px;
+	margin: 15px;
+}
+.card{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transition: 1s ease;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+
+}
+
+.face{
+	background:  #3b5998;
+}
+.instagram{
+	background: #517fa4;
+}
+
+.youtube{
+	background: #bb0000;
+}
+.card-frente, .card-atras {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	backface-visibility: hidden;
+
+}
+.card-frente{
+	font-size: 80px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+
+}
+
+.card-atras{
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.cardBox:hover .card{
+	transform: rotateY(180deg);
+}
+
+.card-atras{
+	transform:  rotateY(180deg);
+
+}
